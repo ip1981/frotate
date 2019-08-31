@@ -1,6 +1,6 @@
 cabal-version: >=1.10
 name: frotate
-version: 0.1.0
+version: 0.1.1
 license: PublicDomain
 maintainer: pashev.igor@gmail.com
 author: Igor Pashev
