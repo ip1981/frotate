@@ -2,6 +2,7 @@ module Main
   ( main
   ) where
 
+import System.Exit (exitFailure)
 import System.IO (hPutStrLn, stderr)
 
 import Data.Time.Calendar (Day)
@@ -64,4 +65,6 @@ main = do
       putStrLn $ unwords . map show . concatMap (take 1 . reverse) $ groups
     Just Delete ->
       putStrLn $ unwords . map show . concatMap (drop 1 . reverse) $ groups
-    Nothing -> mapM_ (hPutStrLn stderr . unwords . map show . reverse) groups
+    Nothing -> do
+      mapM_ (hPutStrLn stderr . unwords . map show . reverse) groups
+      exitFailure

@@ -26,8 +26,8 @@ Usage
 =====
 
 Note that when neither `--keep` nor `--delete` option is given, the utility
-prints all intervals with all days in them _to standard error_. In production
-you will need to specify `--keep` or `--delete` explicitly.
+prints all intervals with all days _to standard error_ and exits with non-zero
+code. In production you will need to specify `--keep` or `--delete` explicitly.
 
 ```
 Usage: frotate ([-k|--keep] | [-d|--delete]) [-b|--base BASE] DAY...
