@@ -14,7 +14,7 @@ The idea is simple, the rotation schedule is determined by an integer function.
 This function gives us a period (number) of days when we must encounter at
 least one backup or whatever we are rotating. When we use an exponential
 function, the scheme is similar to the radioactive decay law. When the
-funtion is simply a constant 1, we don't rotate anything and retain all
+function is simply a constant 1, we don't rotate anything and retain all
 the backups. If it is 2, we retain each second backup.  With some trivial
 function we can achieve a well-known dayly-weekly-monthly-yearly scheme.
 
