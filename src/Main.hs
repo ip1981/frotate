@@ -2,14 +2,13 @@ module Main
   ( main
   ) where
 
+import Control.Applicative ((<**>), (<|>), optional, some)
 import System.Exit (exitFailure)
 import System.IO (hPutStrLn, stderr)
 
 import Data.Time.Calendar (Day)
 import Options.Applicative
   ( Parser
-  , (<**>)
-  , (<|>)
   , argument
   , auto
   , execParser
@@ -21,10 +20,8 @@ import Options.Applicative
   , long
   , metavar
   , option
-  , optional
   , short
   , showDefault
-  , some
   , value
   )
 
